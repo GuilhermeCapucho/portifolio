@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guilherme Capucho - Portfólio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <!--Script-para-mandar-email-->
+  <script>
+    (function(){
+      emailjs.init('s6vm8HWBoYg8y6vMN');
+    })();
+  </script>
+  <!---->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="particles-js"></div>
+  <header>
+    <div class="container">
+
+      <h1 style="font-family: 'Dancing Script', cursive; font-size: 40px; cursor: pointer;" onclick="navigateTo('sobre')">
+      Guilherme Capucho
+    </h1>
+
+      <!--Menu-(Mobile)-->
+      <button class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!--Header-->
+      <div class="nav-theme">
+        <nav>
+          <ul>
+            <li><a href="#" class="active" onclick="navigateTo('sobre')">Sobre Mim</a></li>
+            <li><a href="#" onclick="navigateTo('formacao')">Formação</a></li>
+            <li><a href="#" onclick="navigateTo('portfolio')">Portfólio</a></li>
+            <li><a href="#" onclick="navigateTo('contato')">Contato</a></li>
+          </ul>
+        </nav>
+        <button id="theme-toggle">
+          <img id="theme-icon" src="assets/icons/moon-icon.png">
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <!--Sobre-Mim-->
+      <section id="sobre" class="active">
+
+        <div class="sobre-content">
+          <img src="assets/about/guilherme-capucho.jpeg" class="profile-pic">
+      
+          <div class="sobre-text">
+            <h3 class="intro-text">
+              Olá! Sou Guilherme Capucho<br>
+              <span class="typewriter-target"></span>
+            </h3>
+            <p>
+              Desenvolvedor Backend com experiência em criação e manutenção de APIs RESTful utilizando Django REST Framework e CakePHP.
+              Atuo também em projetos que integram tecnologias de frontend como Angular e React, facilitando a comunicação entre serviços e interfaces modernas.
+              Tenho familiaridade com autenticação via OAuth2/JWT, bancos de dados relacionais, boas práticas de desenvolvimento e automação de deploys.
+            </p>
+      
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/guilherme-capucho/" target="_blank" aria-label="LinkedIn">
+                <img src="assets/icons/linkedin-icon.png" class="linkedin-icon">
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Formação-->
+      <section id="formacao">
+        <div class="formacao-content">
+          <div class="formacao-text">
+            <h3 class="intro-text">
+              Formação e Idiomas
+            </h3>
+            <p>
+              Atualmente estou cursando <strong>Ciência da Computação</strong> e <strong>Banco de Dados</strong>, onde aprofundo conhecimentos em lógica de programação, estrutura de dados e modelagem de schemas.
+            </p>
+            <p>Tenho experiência com:</p>
+            <ul class="skills-list">
+              <li>Angular, React, NextJS, Vite (TypeScript)</li>
+              <li>Python e PHP (CakePHP, Django REST Framework)</li>
+              <li>Bancos de dados: PostgreSQL, MySQL e SQL Server</li>
+              <li>Ferramentas: Docker, Kubernetes, Git, Bitbucket</li>
+              <li>Inglês: Intermediário</li>
+            </ul>
+      
+            <!--Grid-Icons-->
+            <div class="skills-icons">
+              <div class="skill-item">
+                <img src="assets/icons/angular-icon.png" alt="Angular">
+                <span>Angular</span>
+              </div>
+              <div class="skill-item">
+                <img src="assets/icons/react-icon.png" alt="React">
+                <span>React</span>
+              </div>
+              <div class="skill-item">
+                <img src="assets/icons/nextjs-icon.png" alt="Next.js">
+                <span>Next.js</span>
+              </div>
+              <div class="skill-item">
+                <img src="assets/icons/vite-icon.png" alt="Vite">
+                <span>Vite</span>
+              </div>
+              <div class="skill-item">
+                <img src="assets/icons/python-icon.png" alt="Python">
+                <span>Python</span>
+              </div>
+              <div class="skill-item">
+                <img src="assets/icons/php-icon.png" alt="PHP">
+                <span>PHP</span>
+              </div>
+              <div class="skill-item">
+                <img src="assets/icons/postgresql-icon.png" alt="PostgreSQL">
+                <span>PostgreSQL</span>
+              </div>
+              <div class="skill-item">
+                <img src="assets/icons/mysql-icon.png" alt="MySQL">
+                <span>MySQL</span>
+              </div>
+              <div class="skill-item">
+                <img src="assets/icons/docker-icon.png" alt="Docker">
+                <span>Docker</span>
+              </div>
+              <div class="skill-item">
+                <img src="assets/icons/kubernetes-icon.png" alt="Kubernetes">
+                <span>Kubernetes</span>
+              </div>
+              <div class="skill-item">
+                <img src="assets/icons/git-icon.png" alt="Git">
+                <span>Git</span>
+              </div>
+              <div class="skill-item">
+                <img src="assets/icons/bitbucket-icon.png" alt="Bitbucket">
+                <span>Bitbucket</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Portifólio-->
+      <section id="portfolio">
+        <div class="portfolio-container">
+          <h2>Portfólio</h2>
+          <div class="portfolio-grid">
+            <div class="card">
+              <a href="https://github.com/GuilhermeCapucho/noticia_scraper" target="_blank">
+                <div class="card-image">
+                  <img src="assets/projects/noticia-scraper-logo.png">
+                  <div class="overlay">
+                    <h3>Notícia Scraper</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="https://github.com/GuilhermeCapucho/fastapi-task-api" target="_blank">
+                <div class="card-image">
+                  <img src="assets/projects/task-api-logo.png">
+                  <div class="overlay">
+                    <h3>Task API</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Contato-->
+      <section id="contato">
+        <h2 style="color: #2D9CDB;">Contato</h2>
+        <form id="contact-form">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="from_name" required>
+        
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="from_email" required>
+        
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="message" rows="5" required style="resize: none;"></textarea>
+        
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <!--Footer-->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Guilherme Capucho</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <!--Particulas-de-Background-->
+  <script>
+    function initParticles(theme) {
+        const color = theme === 'dark' ? '#ffffff' : '#333333';
+        const container = document.getElementById('particles-js');
+        container.innerHTML = '';
+
+        particlesJS('particles-js', {
+          particles: {
+            number:      { value: 60, density: { enable: true, value_area: 800 } },
+            color:       { value: color },
+            shape:       { type: 'circle' },
+            opacity:     { value: 0.3 },
+            size:        { value: 3, random: true },
+            line_linked: { enable: true, distance: 120, color: color, opacity: 0.2, width: 1 },
+            move:        { enable: true, speed: 2, out_mode: 'out' }
+          },
+          interactivity: {
+            detect_on: 'canvas',
+            events: {
+              onhover: { enable: true, mode: 'repulse' },
+              onclick: { enable: true, mode: 'push' },
+              resize: true
+            },
+            modes: {
+              repulse: { distance: 100, duration: 0.4 },
+              push:    { particles_nb: 4 }
+            }
+          },
+          retina_detect: true
+        });
+      }
+
+      window.addEventListener('load', () => {
+        const theme = document.documentElement.getAttribute('data-theme') === 'dark'
+                    ? 'dark' : 'light';
+        initParticles(theme);
+      });
+  </script>
+</body>
+</html>
