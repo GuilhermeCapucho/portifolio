@@ -210,6 +210,16 @@ nav a.active::after {
   color: var(--color-text);
 }
 
+@media (max-width: 600px) {
+  .intro-text span {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 1.7rem;
+    width: 334px;
+    height: 34px;
+  }
+}
+
 .typewriter-target::after {
   content: 'Desenvolvedor Backend';
   visibility: hidden;
